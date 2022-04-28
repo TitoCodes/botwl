@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import './navigation.module.css';
 import Image from 'next/image';
-import LogoImage from '../../resources/images/logo/logo.gif'
+import LogoImage from 'resources/images/logo/logo.gif'
+import NavigationLink from 'components/module/navigation/navigation-link'
 
 const Navigation = () => {
   return (
@@ -18,18 +19,7 @@ const Navigation = () => {
         </Link>
       </div>
       <div className='basis-2/5 flex justify-evenly'>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-        <Link href="/deep-dive">
-          <a>Deep Dive</a>
-        </Link>
-        <Link href="/policy">
-          <a>Policy</a>
-        </Link>
+        <NavigationLink></NavigationLink>
       </div>
     </nav>
   )

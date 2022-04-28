@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import MinecraftImage from '../../resources/images/games/minecraft-dungeon.jpg'
-import ItTakesTwoImage from '../../resources/images/games/it-takes-two.jpg'
+import MinecraftImage from '../../../resources/images/games/minecraft-dungeon.jpg'
+import ItTakesTwoImage from '../../../resources/images/games/it-takes-two.jpg'
 const MinecraftImageLibrary = () => {
   return (
     <div className="grid grid-rows-2 w-full grid-flow-col bg-gray">

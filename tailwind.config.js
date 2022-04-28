@@ -6,16 +6,25 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      pink: {
-        100: "#FEE1C7",
-      },
-      amber:colors.amber,
-      gray:'#2D3142'
-    },
     extend: {
       fontFamily: {
         roboto: ["Roboto"]
+      },
+      fontSize:{
+        '3xl':[
+          '1.9rem'
+        ]
+      },
+      colors: {
+        pink: {
+          100: "#FEE1C7",
+          200:"#F393BB"
+        },
+        green:{
+          400:"#64D6C4"
+        },
+        amber:colors.amber,
+        gray:'#2D3142'
       }
     },
   },
