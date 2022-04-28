@@ -10,6 +10,11 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto"]
       },
+      fontSize:{
+        '3xl':[
+          '1.9rem'
+        ]
+      },
       colors: {
         pink: {
           100: "#FEE1C7",
