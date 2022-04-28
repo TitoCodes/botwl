@@ -21,7 +21,11 @@ module.exports = {
           200:"#F393BB"
         },
         green:{
+          200:"#7ADCCD",
           400:"#64D6C4"
+        },
+        indigo:{
+          100:"#9E59BD"
         },
         amber:colors.amber,
         gray:'#2D3142'
