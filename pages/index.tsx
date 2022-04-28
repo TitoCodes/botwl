@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
-import Hero from '../components/hero/hero'
-import GameLibrary from '../components/game-library/gameLibrary'
 import Layout from '../components/layout/layout'
+import Hero from 'components/module/hero/hero'
+import GameLibrary from 'components/module/game-library/gameLibrary'
 
 const Home: NextPage = () => {
   return (

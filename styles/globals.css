@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@import '../components/navigation/navigation.module.css';  
+@import '../components/module/navigation/navigation.module.css';  
 @import '../components/layout/layout.module.css';  
 
 @font-face {
