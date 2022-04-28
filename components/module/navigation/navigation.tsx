@@ -18,7 +18,7 @@ const Navigation = () => {
           </a>
         </Link>
       </div>
-      <div className='basis-2/5 flex justify-evenly'>
+      <div className='basis-2/5 flex justify-evenly font-bold'>
         <NavigationLink></NavigationLink>
       </div>
     </nav>

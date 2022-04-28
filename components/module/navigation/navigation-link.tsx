@@ -8,9 +8,9 @@ const NavigationLink = () => {
       <Link href="/about">
         <a>About</a>
       </Link>
-      <Link href="/deep-dive">
+      {/* <Link href="/deep-dive">
         <a>Deep Dive</a>
-      </Link>
+      </Link> */}
       <Link href="/policy">
         <a>Policy</a>
       </Link>

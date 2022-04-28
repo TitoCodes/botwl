@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="flex justify-evenly font-roboto bg-gray text-pink-200 text-ml pt-6 pb-10">
       <div>
         <h3>Sitemap</h3>
-        <div className='flex flex-col text-pink-100 pt-5 text-sm space-y-1'>
+        <div className='flex flex-col text-pink-100 pt-5 text-sm space-y-1 font-bold'>
           <NavigationLink></NavigationLink>
         </div>
       </div>
