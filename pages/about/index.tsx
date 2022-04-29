@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Layout from '../../components/layout/layout';
-import Player from './player/player';
+import Player from '../../components/module/player/player';
 import Player1Image from '../../resources/images/hero/male.gif';
 import Player2Image from '../../resources/images/hero/female.gif';
 
@@ -48,7 +48,7 @@ let player1 = new PlayerProfile(
         favFood: "Salad",
         position: "Player 1",
         imageSrc: Player1Image.src,
-        backgroundColor: 'bg-pink-200',
+        backgroundColor: "bg-pink-200",
         imageXAxisSize: 350.56,
         imageYAxisSize: 320.33
     });
@@ -61,7 +61,7 @@ let player2 = new PlayerProfile(
         favFood: "Ice cream",
         position: "Player 2",
         imageSrc: Player2Image.src,
-        backgroundColor: 'bg-green-200',
+        backgroundColor: "bg-green-200",
         imageXAxisSize:218,
         imageYAxisSize: 207.75
     });
