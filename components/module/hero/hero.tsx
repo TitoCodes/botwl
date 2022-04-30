@@ -10,6 +10,7 @@ const Hero = () => {
         src={Player1Image}
         alt="Player 1"
         width={190}
+        placeholder='empty'
         height={200}>
       </Image>
       <div className='xl:text-3xl sm:text-2xl italic font-roboto font-light text-pink-100 w-60 self-center pl-2'>
