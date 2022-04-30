@@ -10,7 +10,7 @@ const Policy: NextPage = () => {
             <Head>
                 <title>Be Our Third Wheel - Policy</title>
             </Head>
-            <div className='flex flex-col pt-2 leading-loose pl-28 pr-28'>
+            <div className='flex flex-col pt-2 leading-loose pl-5 pr-5 xs:pl-28 xs:pr-28'>
                 <Header title="Privacy Policy for Be Our Third Wheel"></Header>
                 <div className='text-sm text-pink-100 align-left font-roboto font-light italic pb-20'>
                     This Privacy Policy document contains types of information collected and recorded by Be Our Third Wheel and how we use it. Your privacy is important to us. It&apos;s Be Our Third Wheel&apos;s policy to respect your privacy regarding any information we may collect from you across our website, https://beourthirdwheel.com, and other sites we own and operate.

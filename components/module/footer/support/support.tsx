@@ -5,8 +5,8 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 const Support = () => {
     return (
         <>
-            <div><SocialLink icon={faPatreon} title="Patreon"></SocialLink></div>
-            <div><SocialLink icon={faCoffee} title="Buy Me A Coffee"></SocialLink></div>
+            <div><SocialLink icon={faPatreon} title="Patreon" link="https://www.patreon.com/beourthirdwheel"></SocialLink></div>
+            <div><SocialLink icon={faCoffee} title="Buy Me A Coffee" link="http://buymeacoffee.com/beourthirdwheel"></SocialLink></div>
         </>
     )
 }

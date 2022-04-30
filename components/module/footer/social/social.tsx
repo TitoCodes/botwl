@@ -18,7 +18,7 @@ const Social = ({ name, style }: any) => {
           <div><SocialLink icon={faInstagramSquare} title="Instagram" link="https://www.instagram.com/beourthirdwheel/"></SocialLink></div>
           <div><SocialLink icon={faYoutubeSquare} title="Youtube" link="https://www.youtube.com/c/BeOurThirdWheel"></SocialLink></div>
           <div><SocialLink icon={faTwitterSquare} title="Twitter" link="https://twitter.com/BeOurThirdWheel"></SocialLink></div>
-          <div><SocialLink icon={faDiscord} title="Discord"></SocialLink></div>
+          <div><SocialLink icon={faDiscord} title="Discord" link="https://discord.gg/56p2MJedaH"></SocialLink></div>
         </>
     )
 }

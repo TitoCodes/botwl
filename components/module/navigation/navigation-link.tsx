@@ -2,17 +2,17 @@ import Link from 'next/link'
 const NavigationLink = () => {
   return (
     <>
-      <Link href="/">
-        <a>Home</a>
+      <Link href="/" >
+        <a className="hover:text-green-200">Home</a>
       </Link>
       <Link href="/about">
-        <a>About</a>
+        <a className="hover:text-green-200">About</a>
       </Link>
       {/* <Link href="/deep-dive">
         <a>Deep Dive</a>
       </Link> */}
       <Link href="/policy">
-        <a>Policy</a>
+        <a className="hover:text-green-200">Policy</a>
       </Link>
     </>
   )

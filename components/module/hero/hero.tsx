@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className='flex justify-center pl-2 pt-12'>
+    <div className='flex justify-center pl-2 pt-12 pr-2 xs:pr-0'>
       <Image
         className='basis-1/6'
         src={Player1Image}
@@ -13,7 +13,7 @@ const Hero = () => {
         placeholder='empty'
         height={200}>
       </Image>
-      <div className='xl:text-3xl sm:text-2xl italic font-roboto font-light text-pink-100 w-60 self-center pl-2'>
+      <div className='xs:text-3xl text-lg italic font-roboto font-light text-pink-100 w-56 xs:w-60 self-center pl-2 pr-2 xs:pr-0'>
         The couple
         that plays together
         stays together.
