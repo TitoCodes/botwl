@@ -1,6 +1,13 @@
-import Image from 'next/image'
-import MinecraftImage from '../../../resources/images/games/minecraft-dungeon.jpg'
-import ItTakesTwoImage from '../../../resources/images/games/it-takes-two.jpg'
+import Image from 'next/image';
+import MinecraftImage from '../../../resources/images/games/minecraft-dungeon.jpg';
+import ItTakesTwoImage from '../../../resources/images/games/it-takes-two.jpg';
+import CupheadImage from '../../../resources/images/games/cuphead.jpg';
+import AWayOutImage from '../../../resources/images/games/a-way-out.jpg';
+import OverCookedTwoImage from '../../../resources/images/games/overcooked-2.jpg';
+import DiabloThreeImage from '../../../resources/images/games/diablo-3.jpg';
+import StardewValleyImage from '../../../resources/images/games/stardew-valley.jpg';
+import UnravelTwoImage from '../../../resources/images/games/unravel-two.jpg';
+
 const MinecraftImageLibrary = () => {
   return (
     <div className="grid grid-rows-2 w-full grid-flow-col bg-gray">
@@ -9,6 +16,7 @@ const MinecraftImageLibrary = () => {
           src={ItTakesTwoImage}
           alt="MinecraftImage dungeon"
           layout='fill'
+          placeholder='blur'
         ></Image>
       </div>
       <div className="relative border border-amber-200 opacity-30">
@@ -16,47 +24,53 @@ const MinecraftImageLibrary = () => {
           src={MinecraftImage}
           alt="MinecraftImage dungeon"
           layout='fill'
+          placeholder='blur'
         ></Image>
       </div>
       <div className="relative border border-amber-200 opacity-30">
         <Image
-          src={MinecraftImage}
-          alt="MinecraftImage dungeon"
+          src={CupheadImage}
+          alt="Cuphead"
           layout='fill'
+          placeholder='blur'
         ></Image>
       </div>
       <div className="relative border border-amber-200 opacity-30">
         <Image
-          src={MinecraftImage}
-          alt="MinecraftImage dungeon"
+          src={AWayOutImage}
+          alt="A way out"
           layout='fill'
+          placeholder='blur'
         ></Image>
       </div>
       <div className="relative border border-amber-200 opacity-30">
         <Image
-          src={MinecraftImage}
-          alt="MinecraftImage dungeon"
+          src={OverCookedTwoImage}
+          alt="Overcooked 2"
           layout='fill'
+          placeholder='blur'
         ></Image>
       </div>
       <div className="relative border border-amber-200 opacity-30">
         <Image
-          src={MinecraftImage}
-          alt="MinecraftImage dungeon"
+          src={DiabloThreeImage}
+          alt="Diablo 3"
           layout='fill'
+          placeholder='blur'
         ></Image>
       </div>
       <div className="relative border border-amber-200 opacity-30">
         <Image
-          src={MinecraftImage}
-          alt="MinecraftImage dungeon"
+          src={StardewValleyImage}
+          alt="Lego Marvel collection"
           layout='fill'
+          placeholder='blur'
         ></Image>
       </div>
       <div className="border border-amber-200 opacity-30">
         <Image
-          src={MinecraftImage}
-          alt="MinecraftImage dungeon"
+          src={UnravelTwoImage}
+          alt="Unravel Two"
           layout='responsive'
         ></Image>
       </div>
