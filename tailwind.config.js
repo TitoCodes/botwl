@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -6,30 +6,31 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      xs: "667px",
+    },
     extend: {
       fontFamily: {
-        roboto: ["Roboto"]
+        roboto: ["Roboto"],
       },
-      fontSize:{
-        '3xl':[
-          '1.9rem'
-        ]
+      fontSize: {
+        "3xl": ["1.9rem"],
       },
       colors: {
         pink: {
           100: "#FEE1C7",
-          200:"#F393BB"
+          200: "#F393BB",
         },
-        green:{
-          200:"#7ADCCD",
-          400:"#64D6C4"
+        green: {
+          200: "#7ADCCD",
+          400: "#64D6C4",
         },
-        indigo:{
-          100:"#9E59BD"
+        indigo: {
+          100: "#9E59BD",
         },
-        amber:colors.amber,
-        gray:'#2D3142'
-      }
+        amber: colors.amber,
+        gray: "#2D3142",
+      },
     },
   },
   plugins: [],
