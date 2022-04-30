@@ -3,6 +3,7 @@ import Layout from '../../components/layout/layout';
 import Player from '../../components/module/player/player';
 import Player1Image from '../../resources/images/hero/male.gif';
 import Player2Image from '../../resources/images/hero/female.gif';
+import Head from 'next/head';
 
 type PlayerProfileData = {
     name: string,
@@ -62,13 +63,16 @@ let player2 = new PlayerProfile(
         position: "Player 2",
         imageSrc: Player2Image.src,
         backgroundColor: "bg-green-200",
-        imageXAxisSize:218,
+        imageXAxisSize: 218,
         imageYAxisSize: 207.75
     });
 
 const About: NextPage = () => {
     return (
         <Layout>
+            <Head>
+                <title>Be Our Third Wheel - About</title>
+            </Head>
             <div className='pt-10 pr-20 pl-20 space-x-60 flex flex-row justify-center'>
                 <Player player={player1}></Player>
                 <Player player={player2}></Player>
