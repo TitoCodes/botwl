@@ -2,10 +2,14 @@ import type { NextPage } from 'next';
 import Layout from '../../components/layout/layout';
 import Header from 'components/elements/header';
 import SubHeader from 'components/elements/sub-header';
+import Head from 'next/head';
 
 const Policy: NextPage = () => {
     return (
         <Layout>
+            <Head>
+                <title>Be Our Third Wheel - Policy</title>
+            </Head>
             <div className='flex flex-col pt-2 leading-loose pl-28 pr-28'>
                 <Header title="Privacy Policy for Be Our Third Wheel"></Header>
                 <div className='text-sm text-pink-100 align-left font-roboto font-light italic pb-20'>
