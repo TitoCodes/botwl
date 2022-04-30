@@ -13,7 +13,7 @@ const Hero = () => {
         placeholder='empty'
         height={200}>
       </Image>
-      <div className='xs:text-3xl text-lg italic font-roboto font-light text-pink-100 w-40 xs:w-60 self-center pl-2 pr-2 xs:pr-0'>
+      <div className='xs:text-3xl text-lg italic font-roboto font-light text-pink-100 w-56 xs:w-60 self-center pl-2 pr-2 xs:pr-0'>
         The couple
         that plays together
         stays together.

@@ -73,7 +73,7 @@ const About: NextPage = () => {
             <Head>
                 <title>Be Our Third Wheel - About</title>
             </Head>
-            <div className='pt-10 pr-20 pl-20 space-x-60 flex flex-row justify-center'>
+            <div className='pt-10 pr-5 pl-5 xs:pr-20 xs:pl-20 space-x-2 xs:space-x-60 flex flex-row justify-center'>
                 <Player player={player1}></Player>
                 <Player player={player2}></Player>
             </div>
