@@ -14,6 +14,7 @@ module.exports = {
         roboto: ["Roboto"],
       },
       fontSize: {
+        "2xs":["8px"],
         "3xl": ["1.9rem"],
       },
       colors: {
@@ -27,6 +28,9 @@ module.exports = {
         },
         indigo: {
           100: "#9E59BD",
+        },
+        red:{
+          100:"FF2E2E"
         },
         amber: colors.amber,
         gray: "#2D3142",

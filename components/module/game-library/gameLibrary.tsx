@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import GameStatusBadge from 'components/elements/game-status-badge';
 import MinecraftImage from '../../../resources/images/games/minecraft-dungeon.jpg';
 import ItTakesTwoImage from '../../../resources/images/games/it-takes-two.jpg';
 import CupheadImage from '../../../resources/images/games/cuphead.jpg';
@@ -12,14 +13,17 @@ const MinecraftImageLibrary = () => {
   return (
     <div className="grid grid-rows-2 w-full grid-flow-col bg-gray">
       <div className="relative border border-amber-200">
+        <GameStatusBadge status="NOW PLAYING" bgColor="bg-red-600"></GameStatusBadge>
         <Image
           src={ItTakesTwoImage}
-          alt="MinecraftImage dungeon"
+          alt="It takes two"
           layout='fill'
+          objectFit='cover'
           placeholder='blur'
         ></Image>
       </div>
-      <div className="relative border border-amber-200 opacity-30">
+      <div className="relative border border-amber-200 opacity-50">
+        <GameStatusBadge status="UP NEXT" bgColor="bg-indigo-100"></GameStatusBadge>
         <Image
           src={MinecraftImage}
           alt="MinecraftImage dungeon"
