@@ -5,18 +5,21 @@ import Script from 'next/script';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-3NT0LWKZ33`}
+      />
+
+      <Script strategy="lazyOnload" id="google-analytics">
         {`
-          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'G-3NT0LWKZ33', 'auto');
-          ga('send', 'pageview');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3NT0LWKZ33');
         `}
       </Script>
-      <Script
-        src="https://www.google-analytics.com/analytics.js"
-        strategy="afterInteractive"
-      />
-      
+
       <Component {...pageProps} /></>
   )
 }
