@@ -6,10 +6,9 @@ const Layout = ({ children }: any) => {
   return (
     <>
       <Head>
-        <meta property="og:image" content="https://beourthirdwheel.com/home.png" />
+        <meta property="og:image" content="https://beourthirdwheel.com/home.jpg" />
         <meta property="og:url" content='https://beourthirdwheel.com/' />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="627" />
+        <meta property="og:type" content="website" />
       </Head>
       <div className="flex flex-row">
         <div className="basis-0 xs:basis-1/12"></div>
