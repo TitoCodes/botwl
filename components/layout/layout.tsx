@@ -6,7 +6,7 @@ const Layout = ({ children }: any) => {
   return (
     <>
       <Head>
-        <meta property="og:image" content="../../resources/images/seo/home.png" />
+        <meta property="og:image" content="https://beourthirdwheel.com/home.png" />
         <meta property="og:url" content='https://beourthirdwheel.com/' />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="627" />
