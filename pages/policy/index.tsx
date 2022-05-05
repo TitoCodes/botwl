@@ -10,6 +10,8 @@ const Policy: NextPage = () => {
             <Head>
                 <title>Be Our Third Wheel - Policy</title>
                 <meta name="description" content="This Privacy Policy document contains types of information collected and recorded by Be Our Third Wheel and how we use it." />
+                <meta name="og:description" content="This Privacy Policy document contains types of information collected and recorded by Be Our Third Wheel and how we use it." />
+                <meta name="og:title" content="Be Our Third Wheel - Policy" />
             </Head>
             <div className='flex flex-col pt-2 leading-loose pl-5 pr-5 xs:pl-28 xs:pr-28'>
                 <Header title="Privacy Policy for Be Our Third Wheel"></Header>

@@ -10,6 +10,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Be Our Third Wheel - Home</title>
         <meta name="description" content="The couple that plays together stays together. Be Our Third Wheel!" />
+        <meta name="og:description" content="The couple that plays together stays together. Be Our Third Wheel!" />
+        <meta name="og:title" content="Be Our Third Wheel - Home" />
       </Head>
       <Hero></Hero>
       <GameLibrary></GameLibrary>
