@@ -9,6 +9,7 @@ const Home: NextPage = () => {
     <Layout>
       <Head>
         <title>Be Our Third Wheel - Home</title>
+        <meta name="description" content="The couple that plays together stays together. Be Our Third Wheel!" />
       </Head>
       <Hero></Hero>
       <GameLibrary></GameLibrary>
