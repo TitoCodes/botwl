@@ -15,7 +15,7 @@ const Footer = () => {
       <div className='pt-5 pr-5 xs:pt-0 xs:pr-0'>
         <h3>Contact Us</h3>
         <div className='pt-5 text-sm space-y-1'>
-          <div className='text-blue-100'>thirdwheelph@gmail.com</div>
+          <div className='text-blue-300'>thirdwheelph@gmail.com</div>
          {/* <ContactForm></ContactForm> */}
         </div>
       </div>
