@@ -1,69 +1,24 @@
 import Image from 'next/image';
-import GameStatusBadge from 'components/elements/game-status-badge';
+import DontStarveTogetherImage from '../../../resources/images/games/dont-starve-together.jpg';
 import MinecraftImage from '../../../resources/images/games/minecraft-dungeon.jpg';
 import ItTakesTwoImage from '../../../resources/images/currently-playing/it-takes-two.jpg';
 import CupheadImage from '../../../resources/images/games/cuphead.jpg';
 import AWayOutImage from '../../../resources/images/games/a-way-out.jpg';
 import OverCookedTwoImage from '../../../resources/images/games/overcooked-2.jpg';
-import DiabloThreeImage from '../../../resources/images/games/diablo-3.jpg';
 import StardewValleyImage from '../../../resources/images/games/stardew-valley.jpg';
 import UnravelTwoImage from '../../../resources/images/games/unravel-two.jpg';
-import CurrentlyPlaying from 'components/elements/currently-playing';
+import Game from 'components/elements/game';
+import { GameStatus } from 'enums/GameStatus';
 const MinecraftImageLibrary = () => {
   return (
     <div className="grid grid-rows-2 w-full grid-flow-col bg-gray">
-      <div className="relative border border-amber-200">
-        <CurrentlyPlaying name="It Takes Two" playlistLink="https://www.youtube.com/playlist?list=PLLAhYom1S-4NPSgJxcpfdf_so9w8dAVlG" imgSrc={ItTakesTwoImage}></CurrentlyPlaying>
-      </div>
-      <div className="relative border border-amber-200 opacity-50">
-        <GameStatusBadge status="UP NEXT" bgColor="bg-indigo-100"></GameStatusBadge>
-        <Image
-          src={MinecraftImage}
-          alt="MinecraftImage dungeon"
-          layout='fill'
-          placeholder='blur'
-        ></Image>
-      </div>
-      <div className="relative border border-amber-200 opacity-30">
-        <Image
-          src={CupheadImage}
-          alt="Cuphead"
-          layout='fill'
-          placeholder='blur'
-        ></Image>
-      </div>
-      <div className="relative border border-amber-200 opacity-30">
-        <Image
-          src={AWayOutImage}
-          alt="A way out"
-          layout='fill'
-          placeholder='blur'
-        ></Image>
-      </div>
-      <div className="relative border border-amber-200 opacity-30">
-        <Image
-          src={OverCookedTwoImage}
-          alt="Overcooked 2"
-          layout='fill'
-          placeholder='blur'
-        ></Image>
-      </div>
-      <div className="relative border border-amber-200 opacity-30">
-        <Image
-          src={DiabloThreeImage}
-          alt="Diablo 3"
-          layout='fill'
-          placeholder='blur'
-        ></Image>
-      </div>
-      <div className="relative border border-amber-200 opacity-30">
-        <Image
-          src={StardewValleyImage}
-          alt="Lego Marvel collection"
-          layout='fill'
-          placeholder='blur'
-        ></Image>
-      </div>
+      <Game gameStatus={GameStatus.Completed} name="It Takes Two" playlistLink="https://www.youtube.com/playlist?list=PLLAhYom1S-4NPSgJxcpfdf_so9w8dAVlG" imgSrc={ItTakesTwoImage}></Game>
+      <Game gameStatus={GameStatus.NowPlaying} name="A way out" imgSrc={AWayOutImage}></Game>
+      <Game gameStatus={GameStatus.UpNext} name="Minecraft Dungeon" imgSrc={MinecraftImage}></Game>
+      <Game gameStatus={GameStatus.UpNext} name="Overcooked 2" imgSrc={OverCookedTwoImage}></Game>
+      <Game name="Cuphead" imgSrc={CupheadImage}></Game>
+      <Game name="Don't Starve Together" imgSrc={DontStarveTogetherImage}></Game>
+      <Game name="Stardew Valley" imgSrc={StardewValleyImage}></Game>
       <div className="border border-amber-200 opacity-30">
         <Image
           src={UnravelTwoImage}
