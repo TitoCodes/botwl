@@ -13,8 +13,8 @@ const MinecraftImageLibrary = () => {
   return (
     <div className="grid grid-rows-2 w-full grid-flow-col bg-gray">
       <Game gameStatus={GameStatus.Completed} name="It Takes Two" playlistLink="https://www.youtube.com/playlist?list=PLLAhYom1S-4NPSgJxcpfdf_so9w8dAVlG" imgSrc={ItTakesTwoImage}></Game>
-      <Game gameStatus={GameStatus.NowPlaying} name="A way out" imgSrc={AWayOutImage}></Game>
-      <Game gameStatus={GameStatus.UpNext} name="Minecraft Dungeon" imgSrc={MinecraftImage}></Game>
+      <Game gameStatus={GameStatus.NowPlaying} name="A way out" playlistLink="https://youtube.com/playlist?list=PLLAhYom1S-4MEuTtyClqx-0BkbXlNpxuw" imgSrc={AWayOutImage}></Game>
+      <Game gameStatus={GameStatus.NowPlaying} name="Minecraft Dungeon" imgSrc={MinecraftImage}></Game>
       <Game gameStatus={GameStatus.UpNext} name="Overcooked 2" imgSrc={OverCookedTwoImage}></Game>
       <Game name="Cuphead" imgSrc={CupheadImage}></Game>
       <Game name="Don't Starve Together" imgSrc={DontStarveTogetherImage}></Game>
