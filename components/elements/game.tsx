@@ -2,15 +2,16 @@ import GameStatusBadge from "./game-status-badge";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { GameStatus } from "enums/GameStatus";
+import GameModel from "model/GameModel";
 
-const Game = ({ imgSrc, name, playlistLink, gameStatus, isLastElement }: any) => {
+const Game = ({ model }: { model: GameModel }) => {
 
     const [bgColor, setBgColor] = useState("");
     const [statusLabel, setStatusLabel] = useState("");
     const [opacity, setOpacity] = useState("opacity-30");
 
     function determineGameStatusColor() {
-        switch (gameStatus) {
+        switch (model.gameStatus) {
             case GameStatus.UpNext:
                 setBgColor("bg-indigo-100");
                 setStatusLabel("UP NEXT");
@@ -41,12 +42,12 @@ const Game = ({ imgSrc, name, playlistLink, gameStatus, isLastElement }: any) =>
 
     return (
         <div className={`relative border border-amber-200 ${opacity}`}>
-            <a href={playlistLink} target="_blank" rel="noreferrer">
+            <a href={model.playlistLink} target="_blank" rel="noreferrer">
 
-                {displayStatusBadge(gameStatus)}
+                {displayStatusBadge(model.gameStatus)}
                 <Image
-                    src={imgSrc}
-                    alt={name}
+                    src={model.imageSrc}
+                    alt={model.name}
                     layout='fill'
                     objectFit='cover'
                     placeholder='blur'
