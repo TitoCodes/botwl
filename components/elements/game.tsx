@@ -26,7 +26,13 @@ const Game = ({ imgSrc, name, playlistLink, gameStatus, isLastElement }: any) =>
                 setStatusLabel("NOW PLAYING");
                 setOpacity("opacity-100")
                 break;
+            default:
+                break;
         }
+    }
+
+    function displayStatusBadge(gamestatus: number) {
+        return gamestatus != undefined ? <GameStatusBadge status={statusLabel} bgColor={bgColor}></GameStatusBadge> : "";
     }
 
     useEffect(() => {
@@ -35,16 +41,17 @@ const Game = ({ imgSrc, name, playlistLink, gameStatus, isLastElement }: any) =>
 
     return (
         <div className={`relative border border-amber-200 ${opacity}`}>
-        <a href={playlistLink} target="_blank" rel="noreferrer">
-            <GameStatusBadge status={statusLabel} bgColor={bgColor}></GameStatusBadge>
-            <Image
-                src={imgSrc}
-                alt={name}
-                layout='fill'
-                objectFit='cover'
-                placeholder='blur'
-            ></Image>
-        </a>
+            <a href={playlistLink} target="_blank" rel="noreferrer">
+
+                {displayStatusBadge(gameStatus)}
+                <Image
+                    src={imgSrc}
+                    alt={name}
+                    layout='fill'
+                    objectFit='cover'
+                    placeholder='blur'
+                ></Image>
+            </a>
         </div>
     )
 }

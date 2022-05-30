@@ -1,5 +1,6 @@
 export enum GameStatus {
     UpNext,
     NowPlaying,
-    Completed
+    Completed,
+    New
 }

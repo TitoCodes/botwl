@@ -5,6 +5,9 @@ const NavigationLink = () => {
       <Link href="/" >
         <a className="hover:text-green-200">Home</a>
       </Link>
+      <Link href="/games" >
+        <a className="hover:text-green-200">Games</a>
+      </Link>
       <Link href="/about">
         <a className="hover:text-green-200">About</a>
       </Link>
