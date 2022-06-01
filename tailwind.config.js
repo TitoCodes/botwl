@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     screens: {
       xs: "667px",
+      xs2:"374px"
     },
     extend: {
       fontFamily: {
