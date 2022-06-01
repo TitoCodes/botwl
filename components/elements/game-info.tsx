@@ -20,7 +20,7 @@ const GameInfo = ({ model }: { model: GameModel }) => {
                 <a href={model.playlistLink} className="cursor-pointer" target="_blank" rel="noreferrer">
                     <h2 className="font-bold font-roboto sm:text-base xl:text-xl pt-2 pb-2 text-pink-100 hover:text-green-400">{model.name}</h2>
                 </a>
-                <div className="font-roboto xs:w-auto xs2:w-52">
+                <div className="font-roboto w-72">
                 {model.description}
                 </div>
                 
