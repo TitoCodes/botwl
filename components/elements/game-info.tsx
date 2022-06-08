@@ -11,7 +11,6 @@ const GameInfo = ({ model }: { model: GameModel }) => {
                         alt={model.name}
                         layout='fill'
                         objectFit='cover'
-                        placeholder='blur'
                     ></Image>
                 </a>
             </div>

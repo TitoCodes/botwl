@@ -2,16 +2,21 @@ import type { NextPage } from 'next';
 import Layout from '../../components/layout/layout';
 import Head from 'next/head';
 import GameInfo from 'components/elements/game-info';
-import { gameList } from 'data/gameList';
 import Dropdown from 'components/elements/dropdown';
 import { GameStatus } from 'enums/GameStatus';
 import { useState, useEffect } from 'react';
+import GameModel from 'model/GameModel';
 
+export async function getServerSideProps() {
+    const res = await fetch(`${process.env.BACKEND_ENDPOINT}api/games`)
+    const data = await res.json()
+    return { props: { data } }
+}
 
-let games = [...gameList];
-const Games: NextPage = () => {
+const Games: NextPage = ({ data }:any) => {
 
-    const [gameLists, setGameLists] = useState(games);
+    let games = data as GameModel[];
+    const [gameLists, setGameLists] = useState<GameModel[]>(data);
     const [gameStatusLabel, setGameStatusLabel] = useState("");
 
     const handleSelectedChange = (status: GameStatus) => {
@@ -39,7 +44,7 @@ const Games: NextPage = () => {
     useEffect(() => {
         determineGameStatusLabel(GameStatus.New);
         setGameLists(games.filter(a => a.gameStatus == GameStatus.New));
-    }, [])
+    },[games])
 
     return (
         <Layout>
@@ -49,7 +54,7 @@ const Games: NextPage = () => {
                 <meta name="og:description" content="These are the games we are currently playing and already been completed." />
                 <meta name="og:title" content="Be Our Third Wheel - Games" />
             </Head>
-            
+
             <div className="ml-20 mb-3 w-auto mr-20">
                 <h1 className="font-bold font-roboto text-xl pt-2 pb-2 text-gray">{gameStatusLabel}</h1>
             </div>

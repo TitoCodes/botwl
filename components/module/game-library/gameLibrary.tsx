@@ -1,13 +1,10 @@
 import Image from 'next/image';
 import UnravelTwoImage from '../../../resources/images/games/unravel-two.jpg';
-import { gameList } from 'data/gameList';
 import Game from 'components/elements/game';
+import GameModel from 'model/GameModel';
 
 
-const MinecraftImageLibrary = () => {
-  let games = [...gameList];
-  games.pop();
-
+const GameLibrary = ({games}:{games:GameModel[]}) => {
   return (
     <div className="grid grid-rows-2 w-full grid-flow-col bg-gray">
       {
@@ -26,4 +23,4 @@ const MinecraftImageLibrary = () => {
   )
 }
 
-export default MinecraftImageLibrary
+export default GameLibrary
