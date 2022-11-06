@@ -40,7 +40,7 @@ const Game = ({ model }: { model: GameModel }) => {
     })
 
     return (
-        <div className={`relative border border-amber-200 ${opacity}`}>
+        <div className={`relative border border-amber-200 ${opacity} h-32`}>
             <a href={model.playlistLink} target="_blank" rel="noreferrer">
 
                 {displayStatusBadge(model.gameStatus)}
