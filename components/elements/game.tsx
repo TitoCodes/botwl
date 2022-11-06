@@ -5,7 +5,6 @@ import { GameStatus } from "enums/GameStatus";
 import GameModel from "model/GameModel";
 
 const Game = ({ model }: { model: GameModel }) => {
-
     const [bgColor, setBgColor] = useState("");
     const [statusLabel, setStatusLabel] = useState("");
     const [opacity, setOpacity] = useState("opacity-30");
@@ -41,7 +40,7 @@ const Game = ({ model }: { model: GameModel }) => {
     })
 
     return (
-        <div className={`relative border border-amber-200 ${opacity}`}>
+        <div className={`relative border border-amber-200 ${opacity} h-32`}>
             <a href={model.playlistLink} target="_blank" rel="noreferrer">
 
                 {displayStatusBadge(model.gameStatus)}
@@ -50,7 +49,6 @@ const Game = ({ model }: { model: GameModel }) => {
                     alt={model.name}
                     layout='fill'
                     objectFit='cover'
-                    placeholder='blur'
                 ></Image>
             </a>
         </div>

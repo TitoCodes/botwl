@@ -1,16 +1,15 @@
 import { GameStatus } from "enums/GameStatus";
-import { StaticImageData } from "next/image";
 
 export default class GameModel {
   name: string;
-  imageSrc: StaticImageData | string;
+  imageSrc: string;
   description: string;
   playlistLink?: string;
   gameStatus: GameStatus;
 
   constructor(
     name: string,
-    imageSrc: StaticImageData | string,
+    imageSrc: string,
     description: string,
     gameStatus: GameStatus,
     playlistLink?: string
